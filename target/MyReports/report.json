@@ -1,0 +1,748 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-26T16:13:27.946Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3064700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setup_application(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 996600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setup_url()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Booking Cab Sedan",
+        "description": "",
+        "id": "uber-booking-feature;booking-cab-sedan",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_close()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1024300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 37100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User wants to select a car type \"sedan\" from uber app",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sedan",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_wants_to_select_a_car_type_from_uber_app(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1005700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User selects car \"sedan\" and pick up point \"Bangalore\" and drop location \"Pune\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sedan",
+                  "offset": 18
+                },
+                {
+                  "val": "Bangalore",
+                  "offset": 44
+                },
+                {
+                  "val": "Pune",
+                  "offset": 74
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_selects_car_and_pick_up_point_and_drop_location(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 996800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 994800,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Driver starts the journey",
+            "match": {
+              "location": "stepdefinitions.UberBookingSteps.driver_starts_the_journey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 997500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "Driver ends the journey",
+            "match": {
+              "location": "stepdefinitions.UberBookingSteps.driver_ends_the_journey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "User pays 1000 USD",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_pays_usd(java.lang.Integer)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-26T16:13:28.060Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setup_application(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 995900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setup_url()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Booking Cab SUV",
+        "description": "",
+        "id": "uber-booking-feature;booking-cab-suv",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_close()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1007400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "User wants to select a car type \"SUV\" from uber app",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUV",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_wants_to_select_a_car_type_from_uber_app(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "User selects car \"SUV\" and pick up point \"Chennai\" and drop location \"Bangalore\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUV",
+                  "offset": 18
+                },
+                {
+                  "val": "Chennai",
+                  "offset": 42
+                },
+                {
+                  "val": "Bangalore",
+                  "offset": 70
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_selects_car_and_pick_up_point_and_drop_location(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "Driver starts the journey",
+            "match": {
+              "location": "stepdefinitions.UberBookingSteps.driver_starts_the_journey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "Driver ends the journey",
+            "match": {
+              "location": "stepdefinitions.UberBookingSteps.driver_ends_the_journey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "User pays 1000 USD",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_pays_usd(java.lang.Integer)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-26T16:13:28.079Z",
+        "before": [
+          {
+            "result": {
+              "duration": 496200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setup_application(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setup_url()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Booking Cab for Mini",
+        "description": "",
+        "id": "uber-booking-feature;booking-cab-for-mini",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_close()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1007100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 23,
+            "name": "User wants to select a car type \"Mini\" from uber app",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mini",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_wants_to_select_a_car_type_from_uber_app(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "User selects car \"Mini\" and pick up point \"Chennai\" and drop location \"Pondicherry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mini",
+                  "offset": 18
+                },
+                {
+                  "val": "Chennai",
+                  "offset": 43
+                },
+                {
+                  "val": "Pondicherry",
+                  "offset": 71
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_selects_car_and_pick_up_point_and_drop_location(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "Driver starts the journey",
+            "match": {
+              "location": "stepdefinitions.UberBookingSteps.driver_starts_the_journey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "Driver ends the journey",
+            "match": {
+              "location": "stepdefinitions.UberBookingSteps.driver_ends_the_journey()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.takescreenshot()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "User pays 1000 USD",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.UberBookingSteps.user_pays_usd(java.lang.Integer)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.AmazonHooks.refreshPage()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Prod"
+          }
+        ]
+      }
+    ],
+    "name": "Uber Booking Feature",
+    "description": "",
+    "id": "uber-booking-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/Uber.feature",
+    "tags": [
+      {
+        "name": "@All",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
